@@ -1,4 +1,5 @@
 from barcode_scanner import BarcodeScanner
+from isbn_checker import IsbnChecker
 
 def main():
     scanner = BarcodeScanner()
@@ -12,5 +13,8 @@ def main():
         # Ensure resources are released
         scanner.stop_scanning()
 
-if __name__ == '__main__':
-    main()
+# isbn_check = IsbnChecker()
+# isbn_check("9781847941831")
+
+# if __name__ == '__main__':
+#     main()
